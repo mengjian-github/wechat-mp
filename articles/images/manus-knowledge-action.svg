@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+    <!-- 中心圆环 -->
+    <circle cx="400" cy="200" r="150" fill="none" stroke="#6c8ebf" stroke-width="2" stroke-dasharray="8 4"/>
+    
+    <!-- 四个主要节点 -->
+    <g id="understand">
+        <circle cx="400" cy="50" r="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+        <text x="400" y="45" text-anchor="middle" font-size="14" font-weight="bold">需求理解</text>
+        <text x="400" y="65" text-anchor="middle" font-size="12">语义分析</text>
+    </g>
+    
+    <g id="plan">
+        <circle cx="650" cy="200" r="40" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+        <text x="650" y="195" text-anchor="middle" font-size="14" font-weight="bold">方案规划</text>
+        <text x="650" y="215" text-anchor="middle" font-size="12">任务分解</text>
+    </g>
+    
+    <g id="execute">
+        <circle cx="400" cy="350" r="40" fill="#ffe6cc" stroke="#d79b00" stroke-width="2"/>
+        <text x="400" y="345" text-anchor="middle" font-size="14" font-weight="bold">实际执行</text>
+        <text x="400" y="365" text-anchor="middle" font-size="12">代码生成</text>
+    </g>
+    
+    <g id="feedback">
+        <circle cx="150" cy="200" r="40" fill="#fff2cc" stroke="#d6b656" stroke-width="2"/>
+        <text x="150" y="195" text-anchor="middle" font-size="14" font-weight="bold">反馈优化</text>
+        <text x="150" y="215" text-anchor="middle" font-size="12">持续改进</text>
+    </g>
+
+    <!-- 连接箭头 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+        </marker>
+    </defs>
+
+    <!-- 箭头路径 -->
+    <path d="M430 80 Q550 80 620 170" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <path d="M620 230 Q550 320 430 320" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <path d="M370 320 Q250 320 180 230" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <path d="M180 170 Q250 80 370 80" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+
+    <!-- 说明文本 -->
+    <g font-size="12">
+        <text x="520" y="120" text-anchor="middle">分析目标</text>
+        <text x="520" y="280" text-anchor="middle">执行方案</text>
+        <text x="280" y="280" text-anchor="middle">收集结果</text>
+        <text x="280" y="120" text-anchor="middle">优化策略</text>
+    </g>
+
+    <!-- 中心标题 -->
+    <text x="400" y="190" text-anchor="middle" font-size="16" font-weight="bold">Manus</text>
+    <text x="400" y="210" text-anchor="middle" font-size="16" font-weight="bold">知行合一</text>
+</svg> 

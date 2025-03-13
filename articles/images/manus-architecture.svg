@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景层 -->
+    <rect width="800" height="500" fill="#ffffff"/>
+    
+    <!-- 标题 -->
+    <text x="400" y="40" text-anchor="middle" font-size="20" font-weight="bold">Manus 技术架构</text>
+    
+    <!-- 应用层 -->
+    <g transform="translate(0,-20)">
+        <rect x="100" y="80" width="600" height="120" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2" rx="5"/>
+        <text x="400" y="100" text-anchor="middle" font-size="16" font-weight="bold">应用层能力</text>
+        
+        <!-- 应用层组件 -->
+        <rect x="120" y="120" width="170" height="60" fill="#ffffff" stroke="#6c8ebf" stroke-width="1" rx="3"/>
+        <text x="205" y="145" text-anchor="middle" font-size="14">任务规划引擎</text>
+        <text x="205" y="165" text-anchor="middle" font-size="12">目标分解与执行编排</text>
+        
+        <rect x="315" y="120" width="170" height="60" fill="#ffffff" stroke="#6c8ebf" stroke-width="1" rx="3"/>
+        <text x="400" y="145" text-anchor="middle" font-size="14">上下文管理器</text>
+        <text x="400" y="165" text-anchor="middle" font-size="12">会话状态与目标追踪</text>
+        
+        <rect x="510" y="120" width="170" height="60" fill="#ffffff" stroke="#6c8ebf" stroke-width="1" rx="3"/>
+        <text x="595" y="145" text-anchor="middle" font-size="14">执行优化器</text>
+        <text x="595" y="165" text-anchor="middle" font-size="12">策略调整与结果评估</text>
+    </g>
+    
+    <!-- 能力层 -->
+    <g transform="translate(0,20)">
+        <rect x="100" y="220" width="600" height="120" fill="#d5e8d4" stroke="#82b366" stroke-width="2" rx="5"/>
+        <text x="400" y="240" text-anchor="middle" font-size="16" font-weight="bold">Agent能力层</text>
+        
+        <!-- 能力层组件 -->
+        <rect x="120" y="260" width="170" height="60" fill="#ffffff" stroke="#82b366" stroke-width="1" rx="3"/>
+        <text x="205" y="285" text-anchor="middle" font-size="14">工具调用系统</text>
+        <text x="205" y="305" text-anchor="middle" font-size="12">API集成与工具链接</text>
+        
+        <rect x="315" y="260" width="170" height="60" fill="#ffffff" stroke="#82b366" stroke-width="1" rx="3"/>
+        <text x="400" y="285" text-anchor="middle" font-size="14">知识检索系统</text>
+        <text x="400" y="305" text-anchor="middle" font-size="12">实时信息获取与验证</text>
+        
+        <rect x="510" y="260" width="170" height="60" fill="#ffffff" stroke="#82b366" stroke-width="1" rx="3"/>
+        <text x="595" y="285" text-anchor="middle" font-size="14">执行反馈系统</text>
+        <text x="595" y="305" text-anchor="middle" font-size="12">结果分析与经验积累</text>
+    </g>
+    
+    <!-- 基础层 -->
+    <g transform="translate(0,60)">
+        <rect x="100" y="360" width="600" height="60" fill="#ffe6cc" stroke="#d79b00" stroke-width="2" rx="5"/>
+        <text x="400" y="380" text-anchor="middle" font-size="16" font-weight="bold">基础模型能力</text>
+        <text x="400" y="400" text-anchor="middle" font-size="12">大语言模型 | 多模态理解 | 知识图谱</text>
+    </g>
+    
+    <!-- 连接线 -->
+    <g stroke="#666666" stroke-width="1" stroke-dasharray="4">
+        <path d="M400 180 L400 220" marker-end="url(#arrowhead)"/>
+        <path d="M400 320 L400 360" marker-end="url(#arrowhead)"/>
+    </g>
+    
+    <!-- 箭头定义 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#666666"/>
+        </marker>
+    </defs>
+</svg> 

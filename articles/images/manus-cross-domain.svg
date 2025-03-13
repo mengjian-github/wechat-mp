@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+    <!-- 中心Manus节点 -->
+    <ellipse cx="400" cy="250" rx="80" ry="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+    <text x="400" y="245" text-anchor="middle" font-size="14" font-weight="bold">Manus</text>
+    <text x="400" y="265" text-anchor="middle" font-size="14" font-weight="bold">跨领域任务处理器</text>
+    
+    <!-- 智能任务分解模块 -->
+    <rect x="200" y="100" width="120" height="60" rx="5" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+    <text x="260" y="135" text-anchor="middle" font-size="12">智能任务分解</text>
+    <text x="260" y="80" text-anchor="middle" font-size="10">复杂任务自动拆解为</text>
+    <text x="260" y="95" text-anchor="middle" font-size="10">可执行子任务序列</text>
+    
+    <!-- 上下文理解模块 -->
+    <rect x="480" y="100" width="120" height="60" rx="5" fill="#ffe6cc" stroke="#d79b00" stroke-width="2"/>
+    <text x="540" y="135" text-anchor="middle" font-size="12">上下文理解</text>
+    <text x="540" y="80" text-anchor="middle" font-size="10">保持全局目标理解</text>
+    <text x="540" y="95" text-anchor="middle" font-size="10">确保子任务连贯性</text>
+    
+    <!-- 知识迁移模块 -->
+    <rect x="340" y="350" width="120" height="60" rx="5" fill="#fff2cc" stroke="#d6b656" stroke-width="2"/>
+    <text x="400" y="385" text-anchor="middle" font-size="12">知识迁移</text>
+    <text x="400" y="430" text-anchor="middle" font-size="10">跨领域知识灵活应用</text>
+    <text x="400" y="445" text-anchor="middle" font-size="10">创新性问题解决</text>
+    
+    <!-- 连接线 -->
+    <path d="M260 160 L360 250" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <path d="M540 160 L440 250" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <path d="M400 350 L400 290" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- 上方双向箭头 -->
+    <path d="M320 130 Q400 80 480 130" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    <path d="M480 130 Q400 80 320 130" fill="none" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+    
+    <!-- 箭头定义 -->
+    <defs>
+        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+            <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+        </marker>
+    </defs>
+</svg> 
