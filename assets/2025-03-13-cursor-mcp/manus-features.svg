@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="400" fill="#f8f9fa"/>
+    
+    <!-- 中心圆 -->
+    <circle cx="400" cy="200" r="80" fill="#4a90e2" opacity="0.9"/>
+    <text x="400" y="205" text-anchor="middle" fill="white" font-size="24" font-weight="bold">Manus</text>
+    <text x="400" y="230" text-anchor="middle" fill="white" font-size="14">通用AI智能助手</text>
+
+    <!-- 四个特点 -->
+    <!-- 1. 自主完成复杂工作流程 -->
+    <g transform="translate(200,100)">
+        <circle cx="0" cy="0" r="60" fill="#34495e" opacity="0.8"/>
+        <text x="0" y="-10" text-anchor="middle" fill="white" font-size="14">自主完成</text>
+        <text x="0" y="10" text-anchor="middle" fill="white" font-size="14">复杂工作流程</text>
+    </g>
+    <path d="M280,120 L340,160" stroke="#34495e" stroke-width="2"/>
+
+    <!-- 2. 执行多步骤任务 -->
+    <g transform="translate(600,100)">
+        <circle cx="0" cy="0" r="60" fill="#27ae60" opacity="0.8"/>
+        <text x="0" y="-10" text-anchor="middle" fill="white" font-size="14">执行</text>
+        <text x="0" y="10" text-anchor="middle" fill="white" font-size="14">多步骤任务</text>
+    </g>
+    <path d="M520,160 L560,120" stroke="#27ae60" stroke-width="2"/>
+
+    <!-- 3. 进行决策和推理 -->
+    <g transform="translate(200,300)">
+        <circle cx="0" cy="0" r="60" fill="#e67e22" opacity="0.8"/>
+        <text x="0" y="-10" text-anchor="middle" fill="white" font-size="14">进行</text>
+        <text x="0" y="10" text-anchor="middle" fill="white" font-size="14">决策和推理</text>
+    </g>
+    <path d="M280,280 L340,240" stroke="#e67e22" stroke-width="2"/>
+
+    <!-- 4. 自动化日常工作 -->
+    <g transform="translate(600,300)">
+        <circle cx="0" cy="0" r="60" fill="#8e44ad" opacity="0.8"/>
+        <text x="0" y="-10" text-anchor="middle" fill="white" font-size="14">自动化</text>
+        <text x="0" y="10" text-anchor="middle" fill="white" font-size="14">日常工作</text>
+    </g>
+    <path d="M520,240 L560,280" stroke="#8e44ad" stroke-width="2"/>
+
+    <!-- 发布日期 -->
+    <text x="400" y="380" text-anchor="middle" fill="#666" font-size="12">发布日期：2025年3月5日</text>
+</svg> 
