@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- 中心标题 -->
+    <circle cx="400" cy="300" r="120" fill="#4285f4" opacity="0.1"/>
+    <text x="400" y="290" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#4285f4">
+        Gemini 2.0
+    </text>
+    <text x="400" y="320" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#4285f4">
+        Flash
+    </text>
+
+    <!-- 四大能力圆圈 -->
+    <!-- 左上：原生多模态理解 -->
+    <g transform="translate(200,150)">
+        <circle cx="0" cy="0" r="80" fill="#ea4335" opacity="0.1"/>
+        <text x="0" y="-20" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#ea4335">原生多模态理解</text>
+        <text x="0" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">首个直接支持</text>
+        <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">图像生成的AI</text>
+    </g>
+
+    <!-- 右上：超强上下文理解 -->
+    <g transform="translate(600,150)">
+        <circle cx="0" cy="0" r="80" fill="#fbbc05" opacity="0.1"/>
+        <text x="0" y="-20" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#fbbc05">超强上下文理解</text>
+        <text x="0" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">记住所有修改</text>
+        <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">保持风格一致</text>
+    </g>
+
+    <!-- 左下：革命性编辑体验 -->
+    <g transform="translate(200,450)">
+        <circle cx="0" cy="0" r="80" fill="#34a853" opacity="0.1"/>
+        <text x="0" y="-20" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#34a853">革命性编辑体验</text>
+        <text x="0" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">对话式改图</text>
+        <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">实时预览</text>
+    </g>
+
+    <!-- 右下：突破性文字处理 -->
+    <g transform="translate(600,450)">
+        <circle cx="0" cy="0" r="80" fill="#4285f4" opacity="0.1"/>
+        <text x="0" y="-20" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#4285f4">突破性文字处理</text>
+        <text x="0" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">完美文字排版</text>
+        <text x="0" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#666">多语言支持</text>
+    </g>
+
+    <!-- 连接线 -->
+    <g stroke="#ddd" stroke-width="2">
+        <line x1="260" y1="210" x2="340" y2="260"/>
+        <line x1="540" y1="210" x2="460" y2="260"/>
+        <line x1="260" y1="390" x2="340" y2="340"/>
+        <line x1="540" y1="390" x2="460" y2="340"/>
+    </g>
+</svg> 
