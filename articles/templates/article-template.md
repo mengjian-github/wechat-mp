@@ -27,4 +27,4 @@ cover: /assets/images/covers/default.jpg
 2. 参考资料2
 
 ---
-> 欢迎关注我的公众号「孟健的AI编程认知」，获取更多AI编程相关的内容。 
+> 欢迎关注我的公众号「孟健AI编程」，获取更多AI编程相关的内容。 
