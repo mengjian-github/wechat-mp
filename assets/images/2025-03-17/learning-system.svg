@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- 标题 -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">AI学习进阶体系</text>
+    
+    <!-- 阶梯式布局 -->
+    <g transform="translate(50, 100)">
+        <!-- 第五层：AI进阶训练营 -->
+        <g transform="translate(0, 0)">
+            <rect width="700" height="80" rx="10" fill="#4285f4" opacity="0.9"/>
+            <text x="20" y="30" fill="white" font-size="18" font-weight="bold">5. AI进阶训练营</text>
+            <text x="20" y="55" fill="white" font-size="14">Cursor实战 | 智能体开发 | 知识库构建 | 小组项目 | 技术答疑</text>
+            <text x="650" y="30" fill="white" font-size="12" text-anchor="end">准备中</text>
+        </g>
+        
+        <!-- 第四层：社群学习 -->
+        <g transform="translate(50, 100)">
+            <rect width="650" height="80" rx="10" fill="#34a853" opacity="0.85"/>
+            <text x="20" y="30" fill="white" font-size="18" font-weight="bold">4. 社群学习</text>
+            <text x="20" y="55" fill="white" font-size="14">AI编程陪伴群 | 专属知识库 | 案例分享 | 实战讨论</text>
+        </g>
+        
+        <!-- 第三层：进阶学习 -->
+        <g transform="translate(100, 200)">
+            <rect width="600" height="80" rx="10" fill="#fbbc05" opacity="0.85"/>
+            <text x="20" y="30" fill="white" font-size="18" font-weight="bold">3. 进阶学习资源</text>
+            <text x="20" y="55" fill="white" font-size="14">《DeepSeek极简入门与应用》| 274个提示词模板 | 实战案例</text>
+        </g>
+        
+        <!-- 第二层：系统化课程 -->
+        <g transform="translate(150, 300)">
+            <rect width="550" height="80" rx="10" fill="#ea4335" opacity="0.85"/>
+            <text x="20" y="30" fill="white" font-size="18" font-weight="bold">2. 系统化课程</text>
+            <text x="20" y="55" fill="white" font-size="14">DeepSeek小报童课程 | 配套视频教程 | 实操演示</text>
+            <text x="500" y="30" fill="white" font-size="12" text-anchor="end">准备中</text>
+        </g>
+        
+        <!-- 第一层：入门资源 -->
+        <g transform="translate(200, 400)">
+            <rect width="500" height="80" rx="10" fill="#9334e6" opacity="0.85"/>
+            <text x="20" y="30" fill="white" font-size="18" font-weight="bold">1. 入门学习资源</text>
+            <text x="20" y="55" fill="white" font-size="14">B站免费内容 | 飞书文档 | 基础知识科普</text>
+        </g>
+    </g>
+    
+    <!-- 装饰元素：连接线 -->
+    <g transform="translate(50, 100)" stroke="#ddd" stroke-width="2" stroke-dasharray="5,5">
+        <path d="M250,400 L200,300"/>
+        <path d="M300,300 L250,200"/>
+        <path d="M350,200 L300,100"/>
+        <path d="M400,100 L350,0"/>
+    </g>
+</svg> 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="600" fill="#f8f9fa"/>
+    
+    <!-- 标题 -->
+    <text x="400" y="50" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">AI学习路径指南</text>
+    
+    <!-- 普通用户路径 -->
+    <g transform="translate(50, 100)">
+        <rect width="220" height="400" rx="10" fill="#4285f4" opacity="0.1"/>
+        <text x="110" y="40" text-anchor="middle" font-size="18" font-weight="bold" fill="#4285f4">普通用户</text>
+        
+        <!-- 学习步骤 -->
+        <g transform="translate(20, 80)">
+            <circle cx="15" cy="0" r="8" fill="#4285f4"/>
+            <text x="40" y="5" fill="#333" font-size="14">使用DeepSeek等大模型</text>
+            
+            <circle cx="15" cy="50" r="8" fill="#4285f4"/>
+            <text x="40" y="55" fill="#333" font-size="14">学习提示词编写</text>
+            
+            <circle cx="15" cy="100" r="8" fill="#4285f4"/>
+            <text x="40" y="105" fill="#333" font-size="14">尝试各种AI工具</text>
+            
+            <circle cx="15" cy="150" r="8" fill="#4285f4"/>
+            <text x="40" y="155" fill="#333" font-size="14">提高工作效率</text>
+        </g>
+    </g>
+    
+    <!-- 技术从业者路径 -->
+    <g transform="translate(290, 100)">
+        <rect width="220" height="400" rx="10" fill="#fbbc05" opacity="0.1"/>
+        <text x="110" y="40" text-anchor="middle" font-size="18" font-weight="bold" fill="#fbbc05">技术从业者</text>
+        
+        <!-- 学习步骤 -->
+        <g transform="translate(20, 80)">
+            <circle cx="15" cy="0" r="8" fill="#fbbc05"/>
+            <text x="40" y="5" fill="#333" font-size="14">掌握基础应用</text>
+            
+            <circle cx="15" cy="50" r="8" fill="#fbbc05"/>
+            <text x="40" y="55" fill="#333" font-size="14">API调用和集成</text>
+            
+            <circle cx="15" cy="100" r="8" fill="#fbbc05"/>
+            <text x="40" y="105" fill="#333" font-size="14">简单模型部署</text>
+            
+            <circle cx="15" cy="150" r="8" fill="#fbbc05"/>
+            <text x="40" y="155" fill="#333" font-size="14">机器学习基础概念</text>
+        </g>
+    </g>
+    
+    <!-- 转行AI领域路径 -->
+    <g transform="translate(530, 100)">
+        <rect width="220" height="400" rx="10" fill="#34a853" opacity="0.1"/>
+        <text x="110" y="40" text-anchor="middle" font-size="18" font-weight="bold" fill="#34a853">转行AI领域</text>
+        
+        <!-- 学习步骤 -->
+        <g transform="translate(20, 80)">
+            <circle cx="15" cy="0" r="8" fill="#34a853"/>
+            <text x="40" y="5" fill="#333" font-size="14">Python编程基础</text>
+            
+            <circle cx="15" cy="50" r="8" fill="#34a853"/>
+            <text x="40" y="55" fill="#333" font-size="14">机器学习基础理论</text>
+            
+            <circle cx="15" cy="100" r="8" fill="#34a853"/>
+            <text x="40" y="105" fill="#333" font-size="14">深度学习框架</text>
+            
+            <circle cx="15" cy="150" r="8" fill="#34a853"/>
+            <text x="40" y="155" fill="#333" font-size="14">数学和统计学基础</text>
+        </g>
+    </g>
+    
+    <!-- 底部说明 -->
+    <text x="400" y="550" text-anchor="middle" font-size="16" fill="#666">根据个人目标选择适合的学习路径，循序渐进</text>
+</svg> 

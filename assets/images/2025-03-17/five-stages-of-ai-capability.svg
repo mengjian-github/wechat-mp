@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+    <!-- 背景 -->
+    <rect width="800" height="500" fill="#f8f9fa"/>
+    
+    <!-- 阶梯 -->
+    <g transform="translate(50, 450)">
+        <!-- 专家级 -->
+        <rect x="600" y="-400" width="120" height="400" fill="#4285f4" opacity="0.9"/>
+        <text x="660" y="-200" fill="white" text-anchor="middle" font-size="16" font-weight="bold">专家级</text>
+        <text x="660" y="-180" fill="white" text-anchor="middle" font-size="12">纳米AI智能体</text>
+        
+        <!-- 高阶级 -->
+        <rect x="450" y="-320" width="120" height="320" fill="#4285f4" opacity="0.8"/>
+        <text x="510" y="-170" fill="white" text-anchor="middle" font-size="16" font-weight="bold">高阶级</text>
+        <text x="510" y="-150" fill="white" text-anchor="middle" font-size="12">纳米AI知识库</text>
+        
+        <!-- 进阶级 -->
+        <rect x="300" y="-240" width="120" height="240" fill="#4285f4" opacity="0.7"/>
+        <text x="360" y="-140" fill="white" text-anchor="middle" font-size="16" font-weight="bold">进阶级</text>
+        <text x="360" y="-120" fill="white" text-anchor="middle" font-size="12">纳米AI工具</text>
+        
+        <!-- 基础级 -->
+        <rect x="150" y="-160" width="120" height="160" fill="#4285f4" opacity="0.6"/>
+        <text x="210" y="-100" fill="white" text-anchor="middle" font-size="16" font-weight="bold">基础级</text>
+        <text x="210" y="-80" fill="white" text-anchor="middle" font-size="12">提示词工程</text>
+        
+        <!-- 入门级 -->
+        <rect x="0" y="-80" width="120" height="80" fill="#4285f4" opacity="0.5"/>
+        <text x="60" y="-50" fill="white" text-anchor="middle" font-size="16" font-weight="bold">入门级</text>
+        <text x="60" y="-30" fill="white" text-anchor="middle" font-size="12">纳米AI</text>
+    </g>
+    
+    <!-- 标题 -->
+    <text x="400" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">个人AI能力的五个阶段</text>
+</svg> 
