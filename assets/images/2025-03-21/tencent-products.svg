@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+    <!-- 定义渐变 -->
+    <defs>
+        <linearGradient id="centerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#2B5AED;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="productGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+        </linearGradient>
+        <!-- 定义发光效果 -->
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+            <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <!-- 中心六边形 - 混元T1 -->
+    <g transform="translate(400,300)">
+        <path d="M0,-100 L86.6,-50 L86.6,50 L0,100 L-86.6,50 L-86.6,-50 Z" 
+              fill="url(#centerGradient)" 
+              stroke="#1E40AF" 
+              stroke-width="2"
+              filter="url(#glow)"/>
+        <text x="0" y="-20" fill="white" text-anchor="middle" font-size="24" font-weight="bold">混元T1</text>
+        <text x="0" y="20" fill="white" text-anchor="middle" font-size="16">AI大模型</text>
+    </g>
+
+    <!-- 腾讯元宝 -->
+    <g transform="translate(400,120)">
+        <path d="M0,-60 L52,-30 L52,30 L0,60 L-52,30 L-52,-30 Z" 
+              fill="url(#productGradient)" 
+              stroke="#2563EB" 
+              stroke-width="2"/>
+        <text x="0" y="-10" fill="white" text-anchor="middle" font-size="16">腾讯元宝</text>
+        <text x="0" y="15" fill="white" text-anchor="middle" font-size="12">智能对话</text>
+    </g>
+
+    <!-- 微信读书 -->
+    <g transform="translate(580,210)">
+        <path d="M0,-60 L52,-30 L52,30 L0,60 L-52,30 L-52,-30 Z" 
+              fill="url(#productGradient)" 
+              stroke="#2563EB" 
+              stroke-width="2"/>
+        <text x="0" y="-10" fill="white" text-anchor="middle" font-size="16">微信读书</text>
+        <text x="0" y="15" fill="white" text-anchor="middle" font-size="12">智能推荐</text>
+    </g>
+
+    <!-- QQ浏览器 -->
+    <g transform="translate(580,390)">
+        <path d="M0,-60 L52,-30 L52,30 L0,60 L-52,30 L-52,-30 Z" 
+              fill="url(#productGradient)" 
+              stroke="#2563EB" 
+              stroke-width="2"/>
+        <text x="0" y="-10" fill="white" text-anchor="middle" font-size="16">QQ浏览器</text>
+        <text x="0" y="15" fill="white" text-anchor="middle" font-size="12">智能搜索</text>
+    </g>
+
+    <!-- 腾讯文档 -->
+    <g transform="translate(400,480)">
+        <path d="M0,-60 L52,-30 L52,30 L0,60 L-52,30 L-52,-30 Z" 
+              fill="url(#productGradient)" 
+              stroke="#2563EB" 
+              stroke-width="2"/>
+        <text x="0" y="-10" fill="white" text-anchor="middle" font-size="16">腾讯文档</text>
+        <text x="0" y="15" fill="white" text-anchor="middle" font-size="12">创作助手</text>
+    </g>
+
+    <!-- 腾讯云 -->
+    <g transform="translate(220,390)">
+        <path d="M0,-60 L52,-30 L52,30 L0,60 L-52,30 L-52,-30 Z" 
+              fill="url(#productGradient)" 
+              stroke="#2563EB" 
+              stroke-width="2"/>
+        <text x="0" y="-10" fill="white" text-anchor="middle" font-size="16">腾讯云</text>
+        <text x="0" y="15" fill="white" text-anchor="middle" font-size="12">API服务</text>
+    </g>
+
+    <!-- 更多产品 -->
+    <g transform="translate(220,210)">
+        <path d="M0,-60 L52,-30 L52,30 L0,60 L-52,30 L-52,-30 Z" 
+              fill="url(#productGradient)" 
+              stroke="#2563EB" 
+              stroke-width="2"/>
+        <text x="0" y="-10" fill="white" text-anchor="middle" font-size="16">更多产品</text>
+        <text x="0" y="15" fill="white" text-anchor="middle" font-size="12">敬请期待</text>
+    </g>
+
+    <!-- 连接线 -->
+    <g stroke="#4B5563" stroke-width="2" stroke-dasharray="5,5" opacity="0.6">
+        <line x1="400" y1="180" x2="400" y2="220"/>
+        <line x1="528" y1="210" x2="472" y2="270"/>
+        <line x1="528" y1="390" x2="472" y2="330"/>
+        <line x1="400" y1="420" x2="400" y2="380"/>
+        <line x1="272" y1="390" x2="328" y2="330"/>
+        <line x1="272" y1="210" x2="328" y2="270"/>
+    </g>
+</svg> 
