@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>孟健的AI编程世界</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background: #1a1b1f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 800px;
+            background: linear-gradient(145deg, #1e2024, #23252a);
+            border-radius: 20px;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card::before,
+        .card::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #6366f1;
+            opacity: 0.3;
+        }
+
+        .card::before {
+            top: 20px;
+            left: 20px;
+        }
+
+        .card::after {
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .title h1 {
+            color: #fff;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .title p {
+            color: #9ca3af;
+            font-size: 1.2em;
+        }
+
+        .content {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .left-section {
+            flex: 2;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+        }
+
+        .right-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .expert-title {
+            color: #fbbf24;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .expert-title span {
+            font-size: 1.4em;
+        }
+
+        .info-list {
+            list-style: none;
+            color: #e5e7eb;
+        }
+
+        .info-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.6;
+        }
+
+        .info-list li::before {
+            content: '•';
+            color: #6366f1;
+            font-weight: bold;
+        }
+
+        .group-title {
+            color: #fbbf24;
+            font-size: 1.2em;
+            margin: 30px 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .group-title span {
+            font-size: 1.4em;
+        }
+
+        .group-list {
+            list-style: none;
+            color: #e5e7eb;
+        }
+
+        .group-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.6;
+        }
+
+        .group-list li::before {
+            content: '•';
+            color: #6366f1;
+            font-weight: bold;
+        }
+
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            border: 2px dashed #6366f1;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6366f1;
+            margin-bottom: 15px;
+        }
+
+        .contact-text {
+            color: #9ca3af;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .wechat-id {
+            color: #6366f1;
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="title">
+            <h1>孟健的AI编程世界</h1>
+            <p>探索AI与前端技术的无限可能</p>
+        </div>
+
+        <div class="content">
+            <div class="left-section">
+                <div class="expert-title">
+                    <span>👨‍💻</span> 技术专家
+                </div>
+                <ul class="info-list">
+                    <li>国内顶级互联网公司技术团队负责人</li>
+                    <li>前腾讯QQ高级工程师(T11)</li>
+                    <li>《DeepSeek极简入门与应用》作者，销量突破60万册</li>
+                    <li>GitHub千星项目创建者，豆包Marscode讲师</li>
+                </ul>
+
+                <div class="group-title">
+                    <span>⭐</span> 加入AI编程陪伴群
+                </div>
+                <ul class="group-list">
+                    <li>每周AI技术精选与前沿工具推荐</li>
+                    <li>技术难题答疑与实战经验分享</li>
+                    <li>定期专题直播与学习资源更新</li>
+                    <li>现在加入即送「AI工具大礼包」</li>
+                    <li>额外赠送「DeepSeek小报童」会员</li>
+                </ul>
+            </div>
+
+            <div class="right-section">
+                <div class="qr-code">
+                    <img src="wx.png" alt="微信二维码" width="200" height="200" style="border-radius: 10px;">
+                </div>
+                <div class="contact-text">添加微信</div>
+                <div class="wechat-id">mjcoding</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
