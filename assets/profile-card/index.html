@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>孟健的AI编程世界</title>
+    <title>孟健AI编程 - 你的AI成长伙伴</title>
     <style>
         * {
             margin: 0;
@@ -23,10 +23,10 @@
 
         .card {
             width: 100%;
-            max-width: 800px;
+            max-width: 700px;
             background: linear-gradient(145deg, #1e2024, #23252a);
             border-radius: 20px;
-            padding: 40px;
+            padding: 30px;
             position: relative;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -36,50 +36,50 @@
         .card::after {
             content: '';
             position: absolute;
-            width: 20px;
-            height: 20px;
+            width: 15px;
+            height: 15px;
             border-radius: 50%;
             background: #6366f1;
             opacity: 0.3;
         }
 
         .card::before {
-            top: 20px;
-            left: 20px;
+            top: 15px;
+            left: 15px;
         }
 
         .card::after {
-            bottom: 20px;
-            right: 20px;
+            bottom: 15px;
+            right: 15px;
         }
 
         .title {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
         }
 
         .title h1 {
             color: #fff;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 2.2em;
+            margin-bottom: 8px;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
 
         .title p {
             color: #9ca3af;
-            font-size: 1.2em;
+            font-size: 1.1em;
         }
 
         .content {
             display: flex;
-            gap: 40px;
-            margin-top: 40px;
+            gap: 30px;
+            margin-top: 25px;
         }
 
         .left-section {
             flex: 2;
             background: rgba(255, 255, 255, 0.05);
-            padding: 30px;
+            padding: 25px;
             border-radius: 15px;
         }
 
@@ -91,30 +91,32 @@
             justify-content: center;
         }
 
-        .expert-title {
+        .section-title {
             color: #fbbf24;
-            font-size: 1.2em;
-            margin-bottom: 20px;
+            font-size: 1.1em;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
-        .expert-title span {
-            font-size: 1.4em;
+        .section-title span {
+            font-size: 1.3em;
         }
 
         .info-list {
             list-style: none;
             color: #e5e7eb;
+            margin-bottom: 20px;
         }
 
         .info-list li {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             display: flex;
             align-items: flex-start;
-            gap: 10px;
-            line-height: 1.6;
+            gap: 8px;
+            line-height: 1.5;
+            font-size: 0.95em;
         }
 
         .info-list li::before {
@@ -123,101 +125,150 @@
             font-weight: bold;
         }
 
-        .group-title {
-            color: #fbbf24;
-            font-size: 1.2em;
-            margin: 30px 0 20px;
+        .gift-list {
+            list-style: none;
+            color: #e5e7eb;
+            margin-bottom: 20px;
+        }
+
+        .gift-list li {
+            margin-bottom: 8px;
             display: flex;
-            align-items: center;
-            gap: 10px;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.4;
+            font-size: 0.9em;
         }
 
-        .group-title span {
-            font-size: 1.4em;
+        .gift-list li::before {
+            content: '🎁';
+            color: #6366f1;
+            font-weight: bold;
         }
 
-        .group-list {
+        .service-list {
             list-style: none;
             color: #e5e7eb;
         }
 
-        .group-list li {
-            margin-bottom: 12px;
+        .service-list li {
+            margin-bottom: 8px;
             display: flex;
             align-items: flex-start;
-            gap: 10px;
-            line-height: 1.6;
+            gap: 8px;
+            line-height: 1.4;
+            font-size: 0.9em;
         }
 
-        .group-list li::before {
-            content: '•';
+        .service-list li::before {
+            content: '💎';
             color: #6366f1;
             font-weight: bold;
         }
 
         .qr-code {
-            width: 200px;
-            height: 200px;
+            width: 180px;
+            height: 180px;
             border: 2px dashed #6366f1;
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #6366f1;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
         }
 
         .contact-text {
             color: #9ca3af;
             text-align: center;
-            font-size: 0.9em;
-            margin-top: 10px;
+            font-size: 0.85em;
+            margin-top: 8px;
         }
 
         .wechat-id {
             color: #6366f1;
-            font-size: 1.2em;
+            font-size: 1.1em;
             text-align: center;
-            margin-top: 5px;
+            margin-top: 3px;
+        }
+
+        .highlight {
+            color: #fbbf24;
+            font-weight: bold;
+        }
+
+        .compact-info {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .compact-info .info-item {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .compact-info .info-item h3 {
+            color: #fbbf24;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .compact-info .info-item p {
+            color: #e5e7eb;
+            font-size: 0.8em;
+            line-height: 1.3;
         }
     </style>
 </head>
 <body>
     <div class="card">
         <div class="title">
-            <h1>孟健的AI编程世界</h1>
-            <p>探索AI编程技术的无限可能</p>
+            <h1>孟健AI编程</h1>
+            <p>你的AI成长伙伴 🚀</p>
         </div>
 
         <div class="content">
             <div class="left-section">
-                <div class="expert-title">
-                    <span>👨‍💻</span> 技术专家
+                <div class="compact-info">
+                    <div class="info-item">
+                        <h3>👨‍💻 技术专家</h3>
+                        <p>前腾讯T11技术专家<br>70万册畅销书作者</p>
+                    </div>
+                    <div class="info-item">
+                        <h3>🎯 专注领域</h3>
+                        <p>AI编程|工具|智能体<br>DeepSeek|Cursor|Claude</p>
+                    </div>
                 </div>
-                <ul class="info-list">
-                    <li>国内顶级互联网公司技术团队负责人</li>
-                    <li>前腾讯QQ高级工程师(T11)</li>
-                    <li>《DeepSeek极简入门与应用》作者，销量突破70万册</li>
-                    <li>GitHub千星项目创建者，AI技术教学者</li>
+
+                <div class="section-title">
+                    <span>🎁</span> 添加微信即送三重见面礼
+                </div>
+                <ul class="gift-list">
+                    <li><span class="highlight">AI高效工具大礼包(100个精选)</span> 价值 ￥99</li>
+                    <li><span class="highlight">AI系统学习与进阶路线图(2025版)</span> 价值 ￥199</li>
+                    <li><span class="highlight">DeepSeek最佳实践指南（5万字）</span> 价值 ￥399</li>
                 </ul>
 
-                <div class="group-title">
-                    <span>⭐</span> 加入AI编程陪伴群
+                <div class="section-title">
+                    <span>💎</span> 我能为你提供什么？
                 </div>
-                <ul class="group-list">
-                    <li>每周AI技术精选与前沿工具推荐</li>
-                    <li>技术难题答疑与实战经验分享</li>
-                    <li>定期专题直播与学习资源更新</li>
-                    <li>现在加入即送「AI工具大礼包」</li>
-                    <li>额外赠送「DeepSeek小报童」会员</li>
+                <ul class="service-list">
+                    <li>AI编程深度解析与实战教程</li>
+                    <li>DeepSeek前沿技术与应用指南</li>
+                    <li>AI学习路径规划与技能突破</li>
+                    <li>每周AI技术精选与工具推荐</li>
                 </ul>
             </div>
 
             <div class="right-section">
                 <div class="qr-code">
-                    <img src="wx.jpg" alt="微信二维码" width="200" height="200" style="border-radius: 10px;">
+                    <img src="wx.jpg" alt="微信二维码" width="180" height="180" style="border-radius: 10px;">
                 </div>
-                <div class="contact-text">添加微信</div>
+                <div class="contact-text">添加微信，领取三重见面礼</div>
                 <div class="wechat-id">mjcoding3</div>
             </div>
         </div>
