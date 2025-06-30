@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCP小白入门蓝皮书 - 海报</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .poster {
+            width: 500px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #3b82f6 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+            position: relative;
+        }
+
+        /* 几何装饰元素 */
+        .geo-element {
+            position: absolute;
+            border: 2px solid rgba(255,255,255,0.2);
+            border-radius: 8px;
+        }
+
+        .geo-1 {
+            width: 80px;
+            height: 60px;
+            top: 10%;
+            left: -20px;
+            transform: rotate(15deg);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .geo-2 {
+            width: 60px;
+            height: 80px;
+            top: 20%;
+            right: -15px;
+            transform: rotate(-20deg);
+            background: rgba(255,193,7,0.2);
+        }
+
+        .geo-3 {
+            width: 100px;
+            height: 40px;
+            bottom: 15%;
+            left: -30px;
+            transform: rotate(25deg);
+            background: rgba(255,255,255,0.05);
+        }
+
+        .geo-4 {
+            width: 70px;
+            height: 70px;
+            bottom: 10%;
+            right: -25px;
+            transform: rotate(-15deg);
+            background: rgba(255,255,255,0.08);
+        }
+
+        /* 立体书本堆叠 */
+        .book-stack {
+            position: absolute;
+            top: 15%;
+            right: 8%;
+            width: 60px;
+            height: 80px;
+        }
+
+        .book {
+            position: absolute;
+            width: 100%;
+            height: 15px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.1));
+            border-radius: 2px;
+            border-left: 3px solid rgba(255,193,7,0.8);
+        }
+
+        .book:nth-child(1) { bottom: 0; }
+        .book:nth-child(2) { bottom: 12px; transform: translateX(-5px); }
+        .book:nth-child(3) { bottom: 24px; transform: translateX(-10px); }
+        .book:nth-child(4) { bottom: 36px; transform: translateX(-15px); }
+        .book:nth-child(5) { bottom: 48px; transform: translateX(-20px); }
+
+        .header {
+            padding: 40px 30px 30px;
+            text-align: center;
+            position: relative;
+            color: white;
+            z-index: 10;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(255,193,7,0.9);
+            color: #1e3c72;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(255,193,7,0.3);
+        }
+
+        .main-title {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            line-height: 1.1;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 25px;
+            font-weight: 400;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 0 -10px;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 20px 15px;
+            border-radius: 15px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #ffc107, #ff9800);
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 900;
+            display: block;
+            margin-bottom: 8px;
+            text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .stat-label {
+            font-size: 12px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        .content {
+            padding: 30px;
+            background: rgba(255,255,255,0.95);
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: 800;
+            color: #1e3c72;
+            text-align: center;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40px;
+            height: 4px;
+            background: linear-gradient(90deg, #1e3c72, #3b82f6);
+            border-radius: 2px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(30,60,114,0.05), rgba(59,130,246,0.05));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+            border-color: #3b82f6;
+            box-shadow: 0 10px 30px rgba(59,130,246,0.15);
+        }
+
+        .feature-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+            display: block;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .feature-desc {
+            font-size: 12px;
+            color: #64748b;
+            line-height: 1.4;
+            position: relative;
+            z-index: 1;
+        }
+
+        .qr-section {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            padding: 25px;
+            border-radius: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .qr-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: shimmer 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(180deg); }
+        }
+
+        .qr-title {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .qr-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .qr-placeholder {
+            width: 110px;
+            height: 110px;
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            border: 3px solid rgba(255,193,7,0.8);
+        }
+
+        .qr-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .qr-instruction {
+            flex: 1;
+            text-align: left;
+        }
+
+        .qr-step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .qr-step-number {
+            width: 24px;
+            height: 24px;
+            background: rgba(255,193,7,0.9);
+            color: #1e3c72;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: bold;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            padding: 25px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #ffc107, #ff9800, #ffc107);
+        }
+
+        .footer-highlight {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(90deg, #ffc107, #ff9800);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .footer-sub {
+            font-size: 13px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <!-- 几何装饰元素 -->
+        <div class="geo-element geo-1"></div>
+        <div class="geo-element geo-2"></div>
+        <div class="geo-element geo-3"></div>
+        <div class="geo-element geo-4"></div>
+
+        <!-- 立体书本堆叠 -->
+        <div class="book-stack">
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+            <div class="book"></div>
+        </div>
+
+        <!-- 头部 -->
+        <div class="header">
+            <div class="badge">🔥 国内首份官方蓝皮书</div>
+            <h1 class="main-title">MCP小白入门<br>蓝皮书</h1>
+            <p class="subtitle">让AI从聊天工具变成超级助手</p>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">2万+</span>
+                    <span class="stat-label">精华内容</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">12个</span>
+                    <span class="stat-label">实践案例</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">免费</span>
+                    <span class="stat-label">完全开源</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- 内容区域 -->
+        <div class="content">
+            <h2 class="section-title">📖 核心内容</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <span class="feature-icon">🔧</span>
+                    <div class="feature-title">4个神器插件</div>
+                    <div class="feature-desc">彻底改变日常工作流</div>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">📊</span>
+                    <div class="feature-title">Excel自动化</div>
+                    <div class="feature-desc">告别手动画图痛苦</div>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">👨‍🍳</span>
+                    <div class="feature-title">AI大厨助手</div>
+                    <div class="feature-desc">智能菜谱推荐</div>
+                </div>
+                <div class="feature-card">
+                    <span class="feature-icon">🧠</span>
+                    <div class="feature-title">思维链神器</div>
+                    <div class="feature-desc">99%的人不会用</div>
+                </div>
+            </div>
+
+            <!-- 获取方式 -->
+            <div class="qr-section">
+                <h3 class="qr-title">📱 立即免费获取</h3>
+                <div class="qr-container">
+                    <div class="qr-placeholder">
+                        <img src="mcp.png" alt="扫码直接阅读蓝皮书" class="qr-image">
+                    </div>
+                    <div class="qr-instruction">
+                        <div class="qr-step">
+                            <span class="qr-step-number">1</span>
+                            <span>长按识别二维码</span>
+                        </div>
+                        <div class="qr-step">
+                            <span class="qr-step-number">2</span>
+                            <span>直接在线阅读</span>
+                        </div>
+                        <div class="qr-step">
+                            <span class="qr-step-number">3</span>
+                            <span>保存收藏随时查看</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            <div class="footer-highlight">让AI真正成为你的超级助手</div>
+            <div class="footer-sub">零基础友好 · 实战导向 · 持续更新</div>
+        </div>
+    </div>
+</body>
+</html>
