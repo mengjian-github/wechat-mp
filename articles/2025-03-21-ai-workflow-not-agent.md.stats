@@ -1,0 +1,17 @@
+{
+  "title": "对不起，AI Workflow真的不能称之为智能体",
+  "author": "孟健",
+  "date": "2025-03-21",
+  "category": "AI概念辨析",
+  "tags": ["AI Agent", "工作流", "AI编程", "概念澄清"],
+  "word_count": 2156,
+  "reading_time": "7分钟",
+  "abstract": "深入剖析当下被无限放大的AI Agent概念，澄清Agent与Workflow的本质区别，探讨从LLM到Agent的演进路径，以及AI编程作为Agent能力最佳体现的原因。",
+  "key_points": [
+    "AI Agent的真正定义：人工智能代理人，能自主决策和执行",
+    "LLM、Workflow、Agent三者的关系和演进",
+    "工作流与Agent的本质区别",
+    "AI编程是Agent能力的最佳展示",
+    "概念通胀对行业发展的危害"
+  ]
+}
